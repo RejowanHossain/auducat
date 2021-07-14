@@ -25,9 +25,7 @@ footer area
     default css
 ---------------------------------------------------------------------------------------*/
 
-
-/* @import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&family=Poppins&display=swap'); */
-
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Poppins:wght@400;500;600;700&display=swap');
 
 /*-------------------------------------------------------------------------------------
     font-face css
@@ -62,10 +60,11 @@ html,
 body {
     margin: 0;
     padding: 0;
+    font-size: 16px;
 }
 
 body {
-    font-family: 'Jost', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 ul {
@@ -130,13 +129,14 @@ button:focus {
     outline: 0;
 }
 
-a {
+
+/* a {
     color: #120f2d;
     font-size: 16px;
     font-family: 'Jost', sans-serif;
     display: block;
     font-weight: 400;
-}
+} */
 
 h1,
 h2,
@@ -150,10 +150,14 @@ h6,
 .h4,
 .h5,
 .h6 {
-    margin-top: 0
+    margin-top: 0;
+    font-family: 'Lato', sans-serif;
+    color: #1F1F1E;
+    font-weight: 900;
 }
 
-h1 {
+
+/* h1 {
     font-size: 60px;
     line-height: 90px;
     font-weight: 700;
@@ -182,14 +186,14 @@ h5 {
 h6 {
     font-size: 16px;
     line-height: 26px;
-}
+} */
 
 p {
-    font-family: 'Jost', sans-serif;
-    font-size: 18px;
-    line-height: 32px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    line-height: 27px;
     font-weight: 400;
-    color: #6b6a75;
+    color: #717173;
     margin-bottom: 0;
 }
 
@@ -202,16 +206,16 @@ p {
 }
 
 .button {
-    padding: 17px 25px;
-    background: #f14d5d;
+    background: #00938D;
     display: inline-block;
     border-radius: 5px;
 }
 
 .button a {
     color: #ffffff;
-    font-weight: 500;
-    text-transform: capitalize;
+    font-weight: 600;
+    padding: 14px 40px 14px 40px;
+    display: block;
 }
 
 .button a:hover {
@@ -222,3 +226,225 @@ p {
     margin-left: 4px;
     font-size: 14px;
 }
+
+
+/* main css */
+
+
+/* header starts */
+
+.header-bg {
+    background: #EAF1ED;
+}
+
+.nav-wrapper nav ul li {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.nav-wrapper nav ul li a {
+    display: block;
+    color: #1E3322;
+    font-family: 'Lato', sans-serif;
+    padding: 40px 0px 40px 24px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.nav-wrapper ul li a:hover {
+    color: #FD661F;
+}
+
+.nav-wrapper nav ul li:last-child {
+    margin-left: 25px;
+}
+
+.nav-wrapper nav ul li:last-child a {
+    color: #fff;
+    padding: 14px 40px 14px 40px;
+    position: relative;
+    z-index: 2222;
+}
+
+.nav-wrapper nav ul li:last-child a::before {
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 0;
+    left: 0;
+    top: 0;
+    background: #1F1F1E;
+    transition: .3s linear all;
+    border-radius: 5px;
+    z-index: -1;
+}
+
+.nav-wrapper nav ul li:last-child:hover a::before {
+    width: 100%;
+}
+
+
+/* header ends */
+
+
+/* hero starts */
+
+.hero-bg {
+    background: #EAF1ED;
+}
+
+.hero-content h2 {
+    font-size: 50px;
+    line-height: 60px;
+    margin-bottom: 23px;
+    width: 80%;
+}
+
+.hero-content p {
+    margin-bottom: 30px;
+}
+
+.hero-image {
+    position: relative;
+}
+
+.hero-image-main img {
+    width: 100%;
+}
+
+.hero-image .coding {
+    background: #FD661F;
+    top: 23%;
+    left: 80%;
+    padding: 14px 15px;
+    border-radius: 8px;
+    right: -24px;
+    position: absolute;
+}
+
+.hero-image .pencil {
+    background: #707070;
+    position: absolute;
+    padding: 12px 17px;
+    border-radius: 8px;
+    top: 52%;
+    left: -27%;
+}
+
+.hero-meta {
+    position: absolute;
+    top: 10%;
+    background-color: rgba(255, 255, 255, 0.65);
+    box-shadow: 2px 10px 18px 0px rgb(240 227 227 / 65%);
+    padding: 22px 42px 25px;
+    border-radius: 12px;
+    left: -13%;
+}
+
+.hero-meta h4 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 7px;
+}
+
+.hero_ellipse_icon img {
+    position: absolute;
+}
+
+.ellipse1 {
+    left: 24%;
+    top: 2%;
+    margin-right: -130px;
+}
+
+.ellipse1,
+.ellipse7 {
+    animation: animationFramesOne 20s infinite linear;
+}
+
+.ellipse2 {
+    top: 5%;
+}
+
+.ellipse2,
+.ellipse3,
+.ellipse4,
+.ellipse8 {
+    -webkit-animation: moveBounce 3s linear infinite;
+    animation: moveBounce 3s linear infinite;
+}
+
+.ellipse3 {
+    top: 55%;
+    margin-right: -570px;
+    animation: inherit;
+}
+
+.ellipse4 {
+    top: 41%;
+    right: -60px;
+    margin-right: 9%;
+    margin-top: -5%;
+}
+
+.ellipse6 {
+    right: -14%;
+    margin-right: 0px;
+    top: 0px;
+    margin-top: 85px
+}
+
+.ellipse7 {
+    bottom: 14%;
+    left: 0;
+}
+
+.ellipse8 {
+    right: -1%;
+    bottom: 7%;
+}
+
+@keyframes animationFramesOne {
+    0% {
+        -webkit-transform: translate(0px, 0px) rotate(0deg);
+        transform: translate(0px, 0px) rotate(0deg);
+    }
+    20% {
+        -webkit-transform: translate(73px, -1px) rotate(36deg);
+        transform: translate(73px, -1px) rotate(36deg);
+    }
+    40% {
+        -webkit-transform: translate(100px, 72px) rotate(72deg);
+        transform: translate(100px, 72px) rotate(72deg);
+    }
+    60% {
+        -webkit-transform: translate(83px, 122px) rotate(108deg);
+        transform: translate(83px, 122px) rotate(108deg);
+    }
+    80% {
+        -webkit-transform: translate(-40px, 72px) rotate(144deg);
+        transform: translate(-40px, 72px) rotate(144deg);
+    }
+    100% {
+        -webkit-transform: translate(0px, 0px) rotate(0deg);
+        transform: translate(0px, 0px) rotate(0deg);
+    }
+}
+
+@keyframes moveBounce {
+    0% {
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+    }
+    50% {
+        -webkit-transform: translateY(-20px);
+        transform: translateY(-20px);
+    }
+    100% {
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+    }
+}
+
+
+/* hero ends */
