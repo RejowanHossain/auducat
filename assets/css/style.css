@@ -794,19 +794,6 @@ p {
 .book-image {
     width: 470px;
     margin-left: 30px;
-    position: relative;
-}
-
-.book-image::after {
-    position: absolute;
-    content: '';
-    width: 81%;
-    height: 100%;
-    top: -50px;
-    right: 13px;
-    z-index: -1;
-    border-radius: 8px;
-    background-color: rgba(0, 147, 141, 0.09);
 }
 
 .book-slider .slick-prev,
@@ -835,6 +822,10 @@ p {
     background: #F8F7F3;
     padding-top: 130px;
     padding-bottom: 123px;
+}
+
+.feedback-img img {
+    width: 100%;
 }
 
 .feedback-text h4 {
